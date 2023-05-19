@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>VibeMatch</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/stylesheetesame.css">
+        
+        <!-- Icona-->
+        <script src="https://kit.fontawesome.com/d5e237a46b.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="container-fluid">
+
+        <!--titolo-->
+        <div> 
+
+            <div id="topbar" class="col-12  text-center"> 
+              <i class="fa-solid fa-headphones" style="color: #ffffff;"></i> 
+                 </br> 
+              <h class="titolo" id="titoloalto">VibeMatch</h>
+            
+            </div>
+        
+
+            <!--nav-tab-->
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trovaartisti.html">Trova artisti</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="profilo.html" role="button" aria-haspopup="true" aria-expanded="false">Profilo</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="profilo.html">Profilo</a>
+                    <a class="dropdown-item" href="modifica.html">Modifica</a>
+                    <a class="dropdown-item" href="preferiti.html">Preferiti</a>
+                    <a class="dropdown-item" href="chat.html">Chat</a>
+                    <div class="dropdown-divider"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-dark bottone ml-2" data-toggle="modal" data-target="#exampleModalScrollable" >
+                    Iscriviti/Accedi
+                    </button>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#cfooter">Contatti</a>
+                </li>
+              </ul>
+
+                            <!-- Modal -->
+              <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalScrollableTitle">Accedi/Iscriviti</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>
+                        
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        
+                        </div>
+                      
+                        <div class="form-group"> 
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <a href="modifica.html"><button type="button" class="btn btn-outline-light">Iscriviti</button></a>
+                      <button type="button" class="btn btn-outline-light">Accedi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        
+            
+                <div class="justify-content-center my-5" >
+                    <div class="row justify-content-center " style="text-align: center;">
+                    <h3 class="titolo col-8 my-2">Abstract</h3>
+                    <p class="col-8 my-3">Questo sito è stato creato con l’obiettivo di mettere in contatto musicisti, aspiranti tali o 
+                        comunque chiunque abbia abbia la musica come hobby.
+                        Il target principale sono quindi musicisti non professionisti fra i 18 e i 30 anni. 
+                        Il valore aggiunto del sito sta nell'offrire la possibilità di cercare qualsiasi tipo di figura, da chi suona uno strumento,
+                        o offre lezioni, a chi mette a disposizione la propria attrezzatura.</p>
+                    <h3 class="titolo col-8 my-4">Project Manager Plan</h3>
+
+                    <h1 class="sottotitolo col-8 my-2">Benchmarking</h1>
+                        
+                    <p class="col-8 my-3"> <u style="font-size: larger;">Obiettivi</u> </br> L’obiettivo è quello di dare la possibilità a chi suona come hobby, o a chi vuole fare della musica il proprio lavoro, di ampliare la rete di contatti con cui condividono la stessa passione.
+
+
+                    </br> </br><u style="font-size: larger;">Target utente</u> </br>Il sito è rivolto a ragazzi fra i 18 e i 30 anni, che abbiano come passione la musica
+                        
+                        
+                </br>  </br><u style="font-size: larger;"> Competitors</u> </br>Il competitor principale è Kleisma, un'agenzia artistica digitale che permette agli artisti di mettersi in contatto per iniziare delle collaborazioni, tuttavia essendo un'agenzia è principalmente incentrata sulla promozione  degli artisti e di conseguenza pensato per un target di professionisti.
+                        Fra i competitors rientrano poi anche Instagram e Facebook, i Social Network più utilizzati, ma che non sono pensati per gli appassionati di musica.</p>
+
+                        <h1 class="sottotitolo col-8 my-2">Struttura e layout</h1>
+                        
+                        <p class="col-8 my-3"> <u style="font-size: larger;">Architettura</u> 
+                        </br>
+                            <img class=" my-4" src="img/architettura.png" style="width: 100%;">
+                           
+    
+                        </br> </br><u style="font-size: larger;">Wireframe</u> 
+
+                    </br>
+                    <img class=" mt-4"src="img/foto-wire-home.png" style="width: 40%;">
+                     </br> 
+               
+                <img class="imgdocl mr-5 mt-5" src="img/Foto-wire-tartisti.png" style="width: 40%;"><img class="imgdocr mt-5" src="img/Foto-wire-profilo.png" style="width: 40%;">
+                <img class="imgdocl mr-5 mt-5" src="img/Foto-wire-modifica.png" style="width: 40%;"><img class="imgdocr mt-5" src="img/Foto-wire-preferiti.png" style="width: 40%;">
+                <img class="imgdocl mr-5 mt-5" src="img/Foto-wire-Chat.png" style="width: 40%;"><img class="imgdocr mt-5" src="img/foto-wire-docu.png" style="width: 40%;">
+                <img class="imgdocl mr-5 mt-5" src="img/Foto-wire-profili.png" style="width: 40%;"><img class="imgdocr mt-5" src="img/Foto-wire-contatta.png" style="width: 40%;">
+                  
+                    </br>  </br><u style="font-size: larger;">Look and feel</u> 
+                    <p class="col-8 my-3">Il layout, i font e i colori hanno lo scopo di conferire al sito una grafica retrò. La scelta di questo tipo di stile è dovuta al fatto di voler evocare un immaginario in cui la musica si affianca alla nostalgia e all'amatorialità. </br> 
+                        I font usati sono “Broadway” per i titoli e “Lucida Sans” per il testo. I colori principali sono il #222022 e il #88403E, scelti anche perchè riprendono i colori delle immagini del carosello, mentre il testo e le icone sono bianche per la leggibilità sullo sfondo scuro. 
+                        </p>
+                    <h1 class="sottotitolo col-8 my-2">Linguaggi e strumenti</h1>
+                  <p class="col-8 my-3">Per la creazione del sito sono stati usati i linguaggi di HTML e CSS. A supporto della progettazione web sono stati usati i siti di "Bootstrap" per la programmazione, “Fontawesome” per le icone,“Adobe Color” per la scelta dei colori, “Paint” per l’architettura del sito e wireframe e per tutte le foto ad eccezione di quelle presenti nella homepage che sono state prese dal sito di "UnSplash". Come text editor è stato usato “Visual Studio Code”, per la pubblicazione del sito “Github”, mentre per le indagini statistiche e monitoraggio del sito “Google analytics”.</p>
+                    
+                  <h3 class="titolo col-8">Communication strategy</h3>
+
+                  <h1 class="sottotitolo col-8 my-2">Background</h1>
+
+                  <p class="col-8 my-3">VibeMatch si prefigge l'obiettivo di aiutare le persone a trovare qualcuno con cui condividere la propria passione per la musica, sia per chi abbia uno scopo esclusivamente ludico sia per chi invece voglia farne un lavoro. Il nostro valore aggiunto sta proprio nell'offrire un'alternativa nel mercato dei Social Network che sia incentrata sulla musica, ma che non sia pensata per un target di soli specialisti.
+                    I competitors sopra citati, infatti, o non sono pensati per ricercare altri appassionati di musica, come nel caso di Instagram e Facebook, che pur essendo molto diffusi non risultano efficaci se si ha l'obiettivo di trovare una figura in particolare, o sono pensati per un target diverso, più incentrato sul costruirsi una carriera, 
+                    lasciando quindi posto nel mercato per un sito come VibeMatch.</p>
+
+                  <h1 class="sottotitolo col-8 my-2">Obiettivi comunicativi</h1>
+                  <p class="col-8 my-3">  Il progetto si prefigge l'obiettivo di mettere in contatto chi condivide la passione per la musica. Raggiungere 50 visualizzazioni al sito e 20 like al post Instagram del profilo di VibeMatch segnalerebbe l'interesse del target di riferimento.</p>
+
+                  <h1 class="sottotitolo col-8 my-2">Target Audience e messaggio</h1>
+
+                  <p class="col-8 my-3">Il sito si rivolge agli appassionati di musica, in particolare a quelli fra i 18 e i 30 anni, che abbiano a che fare  con il creare musica. 
+
+                    Insegnanti di musica invece, rappresentano il target secondario.
+                    
+                    Questi gruppi vengono raggiunti attraverso pubblicità e campagne social. 
+                    
+                    Il messaggio trasmesso dal sito è quello di musica inteso come strumento di aggregazione e socializzazione.</p>
+
+                    <h1 class="sottotitolo col-8 my-2">Promozione</h1>
+
+                  <p class="col-8 my-3">La promozione del Social avverrà online, attraverso Social Media quali Facebook e soprattutto Instagram che è anche il social più frequentato dal target di VibeMatch, e a livello locale attraverso l'organizzazione di eventi a tema musica con workshop incentrati sulla produzione di contenuti musicali.
+
+                  </p>
+                  <h1 class="sottotitolo col-8 my-2">Valutazione dei risultati</h1>
+
+                  <p class="col-8 my-3">La promozione del Social avverrà online, attraverso Social Media quali Facebook e soprattutto Instagram che è anche il social più frequentato dal target di VibeMatch, e a livello locale attraverso l'organizzazione di eventi a tema musica con workshop incentrati sulla produzione di contenuti musicali.
+                    
+                  </p>
+</div>
+                    
+                </div>
+
+
+
+
+
+
+
+              
+ <!--footer-->
+ <div class="footer border-top" id="cfooter">
+                <div class="container footer">
+                  <div class="row rowfooter" >
+                    <div class="col-4  text-monospace">
+                      <b>CONTACT</b> </br>
+                      Email: vibematch@mail.com </br>
+                      Instagram: vibematch_
+                   
+                    </div>
+                    <div class="col-auto  text-monospace">
+                      <b>ALTRE INFO</b> </br>
+                      <a class="link" href="documentazione.html">Documentazione</a>
+                   
+                    </div>
+                    <div class="col-4    text-monospace">
+                      <b>LICENZE </b></br>
+                      Foto: <a class="link" href="https://unsplash.com/it">Unsplash</a></br></br>
+                     
+                    </div>
+                </div>
+              </div>
+              </div>
+            </div>
+
+        
+
+    </body>
+</html>

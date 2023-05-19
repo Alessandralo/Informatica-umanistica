@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>VibeMatch</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/stylesheetesame.css">
+        
+        <!-- Icona-->
+        <script src="https://kit.fontawesome.com/d5e237a46b.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="container-fluid">
+
+        <!--titolo-->
+        <div> 
+
+            <div id="topbar" class="col-12  text-center"> 
+              <i class="fa-solid fa-headphones" style="color: #ffffff;"></i> 
+                 </br> 
+              <h class="titolo" id="titoloalto">VibeMatch</h>
+            
+            </div>
+        
+
+            <!--nav-tab-->
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="trovaartisti.html">Trova artisti</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="profilo.html" role="button" aria-haspopup="true" aria-expanded="false">Profilo</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="profilo.html">Profilo</a>
+                    <a class="dropdown-item" href="modifica.html">Modifica</a>
+                    <a class="dropdown-item activ" href="preferiti.html">Preferiti</a>
+                    <a class="dropdown-item" href="chat.html">Chat</a>
+                    <div class="dropdown-divider"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-dark bottone ml-2" data-toggle="modal" data-target="#exampleModalScrollable" >
+                    Iscriviti/Accedi
+                    </button>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#cfooter">Contatti</a>
+                </li>
+              </ul>
+
+                            <!-- Modal -->
+              <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalScrollableTitle">Accedi/Iscriviti</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>
+                        
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        
+                        </div>
+                      
+                        <div class="form-group"> 
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <a href="modifica.html"><button type="button" class="btn btn-outline-light">Iscriviti</button></a>
+                      <button type="button" class="btn btn-outline-light">Accedi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+                
+                <div class="container">
+                  <div class="row barra"> <!--divisione barra di ricerca e profili-->
+                    <div class="col-9">
+                  
+                      <div class="row border">
+                        <div class="col-4 profilo "><img class= "imgtrovaartisti border" src="img/fotoprofilo.png">
+                        </div>
+                        <div class="col-8 ">
+                        </br> </br>
+                          <p class="nomeprofilo d-inline"><a href="profili.html">Nome Cognome </a>     
+                            <div class="form-group form-check d-inline">
+                              <input type="checkbox" name="heart-checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1"></label>
+                            </div>
+                            <p class="luogo">Età, Luogo</p> </p> 
+                          
+                          
+                            <p class=" p-3 my-4 descrizione border rounded">Descrizione</p>
+                            <table class="table table-bordered " style="width: 100%;">
+                              <thead>
+                                <tr>
+                                  
+                                  <th scope="col"> I TUOI SCOPI</th>
+                                  <th scope="col">CHE MUSICISTA SEI</th>
+                                  <th scope="col"> GENERE MUSICALE</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  
+                                  <td>Elementi selezionati</td>
+                                  <td>Elementi selezionati (incluso livello tecnico)</td>
+                                  <td>Elementi selezionati</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        
+                        
+                          
+                          
+                          
+                        
+                        </div>
+                      </div>
+
+                      <div class="row border">
+                        <div class="col-4 profilo"><img class= "imgtrovaartisti border" src="img/fotoprofilo.png">
+                        </div>
+                        <div class="col-8">
+                        </br> </br>
+                        <p class="nomeprofilo d-inline"><a href="profili.html">Nome d'arte </a>     </p>
+                          <div class="form-group form-check d-inline">
+                            <input type="checkbox" name="heart-checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1"></label>
+                          </div>
+
+
+                         <p class="luogo">Età, Luogo</p> </p> 
+                        
+                        
+                         <p class=" p-3 my-4 descrizione border rounded">Descrizione</p>
+                            <table class="table table-bordered " style="width: 100%;">
+                              <thead>
+                                <tr>
+                                  
+                                  <th scope="col"> I TUOI SCOPI</th>
+                                  <th scope="col">CHE MUSICISTA SEI</th>
+                                  <th scope="col"> GENERE MUSICALE</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  
+                                  <td>Elementi selezionati</td>
+                                  <td>Elementi selezionati (incluso livello tecnico)</td>
+                                  <td>Elementi selezionati</td>
+                                </tr>
+                                
+                              </tbody>
+                            </table>
+                        
+                        </div>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                  
+                  
+                    <div class="col-3 align-items-start barraricerca border">
+                   
+                    
+                    <h2 style="text-align: center;">Ti hanno aggiunto ai preferiti </h2> 
+
+            
+              <section>
+                
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+                <a href="profili.html"><img class= "imgpreferiti border mt-5 ml-4" src="img/fotopreferiti.png"></a>
+
+                
+              </section>
+             
+             
+              
+            </div>
+                  </div>
+                </div>
+              
+
+                 <!--footer-->
+                 <div class="footer border-top" id="cfooter">
+                  <div class="container footer">
+                    <div class="row rowfooter" >
+                      <div class="col-4 text-monospace">
+                        <b>CONTACT</b> </br>
+                        Email: vibematch@mail.com </br>
+                        Instagram: vibematch_
+                     
+                      </div>
+                      <div class="col-auto  text-monospace">
+                        <b>ALTRE INFO</b> </br>
+                        <a class="link" href="documentazione.html">Documentazione</a>
+                     
+                      </div>
+                      <div class="col-4    text-monospace">
+                        <b>LICENZE </b></br>
+                        Foto: <a class="link" href="https://unsplash.com/it">Unsplash</a></br></br>
+                       
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+             
+                
+
+              
+    </body>
+</html>

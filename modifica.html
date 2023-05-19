@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>VibeMatch</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/stylesheetesame.css">
+        
+        <!-- Icona-->
+        <script src="https://kit.fontawesome.com/d5e237a46b.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body class="container-fluid">
+
+        <!--titolo-->
+        <div> 
+
+            <div id="topbar" class="col-12  text-center"> 
+              <i class="fa-solid fa-headphones" style="color: #ffffff;"></i> 
+                 </br> 
+              <h class="titolo" id="titoloalto">VibeMatch</h>
+            
+            </div>
+        
+
+            <!--nav-tab-->
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link " href="index.html">Homepage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="trovaartisti.html">Trova artisti</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Profilo</a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="profilo.html">Profilo</a>
+                    <a class="dropdown-item activ" href="modifica.html">Modifica</a>
+                    <a class="dropdown-item" href="preferiti.html">Preferiti</a>
+                    <a class="dropdown-item" href="chat.html">Chat</a>
+                    <div class="dropdown-divider"></div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-dark bottone ml-2" data-toggle="modal" data-target="#exampleModalScrollable" >
+                    Iscriviti/Accedi
+                    </button>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#cfooter">Contatti</a>
+                </li>
+              </ul>
+
+                            <!-- Modal -->
+              <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalScrollableTitle">Accedi/Iscriviti</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      
+                      <form>
+                        
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        
+                        </div>
+                      
+                        <div class="form-group"> 
+                          <label for="exampleInputPassword1">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+                      
+                    </div>
+                    <div class="modal-footer">
+                      
+                      <button type="button" class="btn btn-outline-light">Iscriviti</button>
+                      <button type="button" class="btn btn-outline-light">Accedi</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--inizio divisione-->
+
+              <div class="container ">
+              </br>
+                <div class="row  justify-content-center p-5">
+                  <div class="col-auto  border profilo-modifica">
+                    <input type="file" id="myfile" style="display:none;" > Aggiungi immagine profilo 
+                    <button class="mt-3" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+                  </div>
+                  <div class="col-6">
+                 
+                    
+                    <div class="form-group">
+                       
+                        <input type="email" class="form-control" placeholder="Nome e cognome / Nome d'arte ">  
+                        <input type="email" class="form-control d-inline mt-2" style="width: 30%;" placeholder="Età "> <input type="email" style="width: 30%;" class="form-control d-inline" placeholder="Luogo"> </br>
+                     
+                    
+                    <input type="email" class="form-control mt-4"  style="height: 100px;" placeholder="Descrizione"> 
+                    
+                    </div>
+                    
+                  
+                   
+                
+              </div>
+                </div>
+                <div class="row justify-content-center">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      
+                      <th scope="col"> I TUOI SCOPI</th>
+                      <th scope="col">CHE MUSICISTA SEI</th>
+                      <th scope="col"> GENERE MUSICALE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      
+                      <td>
+                        
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Formare una band
+                            </label> </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Collaborazione
+                            </label></div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Suonare insieme occasionalmente
+                            </label></div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Attrezzature
+                            </label></div>
+
+                      </td>
+                      <td>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Cantante:
+                                  </button>
+                                </h2>
+                              </div>
+                          
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Basso
+                                        </label> </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Baritono
+                                        </label></div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Tenore
+                                        </label></div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Contralto
+                                        </label></div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Mezzo soprano
+                                        </label></div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                         <label class="form-check-label" for="defaultCheck1">
+                                             Soprano
+                                         </label></div>
+                                </div>
+                              </div>
+                            </div>  
+                       
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Corista:
+                                      </button>
+                                    </h2>
+                                  </div>
+                              
+                                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Basso
+                                            </label> </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Baritono
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Tenore
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Contralto
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Mezzo soprano
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                             <label class="form-check-label" for="defaultCheck1">
+                                                 Soprano
+                                             </label></div>
+                                    </div>
+                                  </div>
+                                </div>  
+                                <div class="card">
+                                    <div class="card-header" id="headingThree">
+                                      <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                         Strumentista:
+                                          </button>
+                                        </h2>
+                                      </div>
+                                  
+                                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Arpista
+                                            </label> </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Bassista
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Chitarrista
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Sassofonista
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Trombettista
+                                            </label></div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Violoncellista
+                                                </label></div>
+                                        <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                                Altro
+                                            </label></div>
+
+                                        </div>
+                                    </div>
+                                    </div>  
+                             
+                                    <div class="card">
+                                        <div class="card-header" id="headingFour">
+                                          <h2 class="mb-0">
+                                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Electronics:
+                                              </button>
+                                            </h2>
+                                          </div>
+                                      
+                                          <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Dj
+                                                    </label> </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Live electronics
+                                                    </label></div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Producer
+                                                    </label></div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Attrezzature
+                                                    </label></div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                       Altro
+                                                    </label></div>
+                                               
+                                            </div>
+                                          </div>
+                                        </div>  
+                                        <div class="card">
+                                            <div class="card-header" id="headingFive">
+                                              <h2 class="mb-0">
+                                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                   Altro:
+                                                  </button>
+                                                </h2>
+                                              </div>
+                                          
+                                              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                                                <div class="card-body">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Arrangiatore
+                                                        </label> </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Autore (di testi)
+                                                        </label></div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Compositore
+                                                        </label></div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Fornitore di attrezzatura
+                                                        </label></div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                        <label class="form-check-label" for="defaultCheck1">
+                                                            Altro
+                                                        </label></div>
+                                                    
+                                                </div>
+                                              </div>
+                                            </div>  
+                        
+
+                      </td>
+                      <td>
+                        
+                        
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Hip Hop
+                                </label> </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Jazz
+                                </label></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Indie
+                                </label></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Indie Rock
+                                </label></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Musica Classica
+                                </label></div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Musica Country
+                                    </label></div>
+                            <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">
+                                    Musica elettronica
+                                </label></div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Pop
+                                    </label></div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                           R&B
+                                        </label></div>
+                                <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Rock
+                                    </label></div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                            <label class="form-check-label" for="defaultCheck1">
+                                               Techno
+                                            </label></div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                        <label class="form-check-label" for="defaultCheck1">
+                                            Altro
+                                        </label></div>
+
+                      </td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+
+                </div>
+
+
+                      <div class="row d-flex justify-content-center mx-auto galleria-modifica" style="width: 70%;" >
+                        <div class="imgprofilo border" > <div class="col-auto   profilog-modifica">
+                            <input type="file" id="myfile" style="display:none;" > Aggiungi immagine profilo 
+                            <button class="mt-3" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+                          </div></div>
+                        <div class="imgprofilo border" > <div class="col-auto   profilog-modifica">
+                            <input type="file" id="myfile" style="display:none;" > Aggiungi immagine profilo 
+                            <button class="mt-3" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+                          </div> </div>
+                          <div class="imgprofilo border" > <div class="col-auto   profilog-modifica">
+                            <input type="file" id="myfile" style="display:none;" > Aggiungi immagine profilo 
+                            <button class="mt-3" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+                          </div> </div>
+                          <div class="imgprofilo border" > <div class="col-auto   profilog-modifica">
+                            <input type="file" id="myfile" style="display:none;" > Aggiungi immagine profilo 
+                            <button class="mt-3" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+                          </div> </div>
+                          <div class="imgprofilo border" > <div class="col-auto   profilog-modifica">
+                            <input type="file" id="myfile" style="display:none;" > Aggiungi immagine profilo 
+                            <button class="mt-3" onclick="document.getElementById('myfile').click()">Scegli qui</button>
+                          </div> </div>
+                         </div>
+                      
+                    <div col="row justify-content-center d-flex "> 
+                      <div class="col justify-content-center d-flex">
+                      <button type="button" class="btn btn-outline-light d-inline modificabutton " >Annulla modifiche</button>
+                      <button type="button" class="btn btn-outline-light d-inline modificabutton " >Salva</button>
+                    </div></div>
+                       
+                     
+                       
+                        <!--footer-->
+                 <div class="footer border-top" id="cfooter">
+                        <div class="container footer">
+                          <div class="row rowfooter" >
+                            <div class="col-4  text-monospace">
+                              <b>CONTACT</b> </br>
+                              Email: vibematch@mail.com </br>
+                              Instagram: vibematch_
+                           
+                            </div>
+                            <div class="col-auto  text-monospace">
+                              <b>ALTRE INFO</b> </br>
+                              <a class="link" href="documentazione.html">Documentazione</a>
+                           
+                            </div>
+                            <div class="col-4    text-monospace">
+                              <b>LICENZE </b></br>
+                              Foto: <a class="link" href="https://unsplash.com/it">Unsplash</a></br></br>
+                             
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                    </div>
+              
+
+    </body>
+</html>
